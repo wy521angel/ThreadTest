@@ -14,8 +14,8 @@ public class DeadLockTest {
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
-//                    synchronized (lockB) {
-//                    }
+                    synchronized (lockB) {
+                    }
                     System.out.println("finish A");
                 }
             }
@@ -29,8 +29,8 @@ public class DeadLockTest {
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
-//                    synchronized (lockA) {
-//                    }
+                    synchronized (lockA) {
+                    }
                     System.out.println("finish B");
                 }
             }
