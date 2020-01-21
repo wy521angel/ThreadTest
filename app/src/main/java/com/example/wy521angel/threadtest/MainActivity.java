@@ -1,9 +1,7 @@
 package com.example.wy521angel.threadtest;
 
-import android.app.IntentService;
 import android.app.ListActivity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -12,7 +10,7 @@ import android.widget.ListView;
 
 public class MainActivity extends ListActivity {
 
-    private String[] titles = {"AsyncTask的串行与并行", "IntentService的工作方式"};
+    private String[] titles = {"AsyncTask的串行与并行", "IntentService的工作方式", "ThreadLocal 使用测试"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +29,9 @@ public class MainActivity extends ListActivity {
                 break;
             case 1:
                 startActivity(new Intent(this, IntentServiceActivity.class));
+                break;
+            case 2:
+                startActivity(new Intent(this, ThreadLocalTestActivity.class));
                 break;
         }
     }
