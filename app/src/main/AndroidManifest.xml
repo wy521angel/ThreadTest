@@ -18,10 +18,10 @@
         </activity>
 
         <activity android:name=".AsyncTaskActivity" />
-        <activity android:name=".IntentServiceActivity" />
+
         <activity android:name=".ThreadLocalTestActivity" />
 
-        <service android:name=".LocalIntentService" />
+
     </application>
 
 </manifest>

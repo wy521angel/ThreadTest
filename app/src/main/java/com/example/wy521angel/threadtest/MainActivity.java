@@ -10,7 +10,7 @@ import android.widget.ListView;
 
 public class MainActivity extends ListActivity {
 
-    private String[] titles = {"AsyncTask的串行与并行", "IntentService的工作方式", "ThreadLocal 使用测试"};
+    private String[] titles = {"AsyncTask的串行与并行", "ThreadLocal 使用测试"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,9 +28,6 @@ public class MainActivity extends ListActivity {
                 startActivity(new Intent(this, AsyncTaskActivity.class));
                 break;
             case 1:
-                startActivity(new Intent(this, IntentServiceActivity.class));
-                break;
-            case 2:
                 startActivity(new Intent(this, ThreadLocalTestActivity.class));
                 break;
         }
